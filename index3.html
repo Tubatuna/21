@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metotları</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <p id="demo"></p>
+    <script>
+let str = "Merhabaaaaaaaaa";
+let str2 =" lorem20skjdvhsajklşİDSKLJFVSHAJKlşslkdjghsajKLŞASKDJGHSAJKLDJFDHSJK";
+document.getElementById("demo").innerHTML=str2.length;
+// length uzunluk demek metnin kaç karakterden oluştuğunu bize ifade eder.
+str="Elma,armut, karpuz, kavun aldım.";
+document.getElementById("demo").innerHTML=str.slice(0,4);
+
+let text="Elma, armut, kiraz, kavun,kiraz aldım.";
+console.log(text.slice(6,11)) // sıfırıncı indisten saymaya başlanır. Parametrelerden ilki dahil ikinci dah,l değil son parametre sayılmaz
+console.log(text.substring(11));
+console.log(text.substr(6,11)); //slice alternatifi
+
+console.log(text.replace("armut","mango"));// yerine koyar armut yerine mango koyar
+console.log(text);
+console.log(text.replace("kiraz","portakal"));  // sadece ilk kirazı değiştirdi.
+console.log(text.replaceAll("kiraz","portakal")); // All ile tüm kirazları portakala çevirdi. Ancak tüm harflarin aynı olduğuna dikkat etmek gerekir. Çünkü tek bir farkta değiştirmez
+console.log(text.toLocaleUpperCase());
+
+let text1="Selam";
+let text2="arkadaşlar";
+
+console.log(text1+ " " + text2);
+
+console.log(text1.concat(" ",text2));
+console.log(text1.concat("-",text2));
+console.log(text1.concat(" genç ",text2));
+
+let text3="       selam     ";
+console.log(text3);
+console.log(text3.trim());// etrafından bırakılan boşlukları siler
+console.log(text.split("")); //başı sonuna ayraç koydu. Bu method listeye çevirir
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
